@@ -1,0 +1,19 @@
+[
+  {"op": "register_client", "at": "2026-11-02 11:58", "telegram_id": 3003, "name": "Мария Соколова", "phone": "+7 911 222-33-44"},
+  {"op": "register_client", "at": "2026-11-02 11:58", "telegram_id": 3004, "name": "", "phone": "123"},
+  {"op": "create_order", "at": "2026-11-02 11:59", "telegram_id": 4004, "lines": [{"item_id": 1, "quantity": 1}]},
+  {"op": "create_order", "at": "2026-11-02 11:59", "telegram_id": 3003, "lines": [{"item_id": 99, "quantity": 1}, {"item_id": 7, "quantity": 1}, {"item_id": 3, "quantity": 0}]},
+  {"op": "create_order", "at": "2026-11-02 12:00", "telegram_id": 3003, "lines": [{"item_id": 1, "quantity": 3}, {"item_id": 3, "quantity": 1}, {"item_id": 5, "quantity": 2}]},
+  {"op": "create_order", "at": "2026-11-02 12:02", "telegram_id": 2002, "lines": [{"item_id": 2, "quantity": 1}, {"item_id": 6, "quantity": 1}]},
+  {"op": "update_status", "at": "2026-11-02 12:03", "order_id": 8, "status": "CONFIRMED"},
+  {"op": "update_status", "at": "2026-11-02 12:05", "order_id": 8, "status": "COOKING"},
+  {"op": "get_status", "at": "2026-11-02 12:10", "order_id": 8},
+  {"op": "update_status", "at": "2026-11-02 12:12", "order_id": 9, "status": "DELIVERED"},
+  {"op": "update_status", "at": "2026-11-02 12:15", "order_id": 6, "status": "ON_THE_WAY"},
+  {"op": "assign_courier", "at": "2026-11-02 12:20", "order_id": 9},
+  {"op": "assign_courier", "at": "2026-11-02 12:20", "order_id": 8},
+  {"op": "update_status", "at": "2026-11-02 12:21", "order_id": 8, "status": "ON_THE_WAY"},
+  {"op": "get_status", "at": "2026-11-02 12:25", "order_id": 8},
+  {"op": "update_status", "at": "2026-11-02 12:35", "order_id": 8, "status": "DELIVERED"},
+  {"op": "get_status", "at": "2026-11-02 12:36", "order_id": 8}
+]

@@ -1,0 +1,286 @@
+{
+  "clients": {
+    "1": {
+      "client_id": 1,
+      "telegram_id": 2002,
+      "name": "Олег Петров",
+      "phone": "+7 900 111-22-33",
+      "registered_at": "2026-10-01 09:00"
+    }
+  },
+  "menu_categories": {
+    "1": {
+      "category_id": 1,
+      "name": "Бургеры"
+    },
+    "2": {
+      "category_id": 2,
+      "name": "Закуски"
+    },
+    "3": {
+      "category_id": 3,
+      "name": "Напитки"
+    }
+  },
+  "menu_items": {
+    "1": {
+      "item_id": 1,
+      "category_id": 1,
+      "name": "Классический бургер",
+      "price": 249.0,
+      "cooking_minutes": 8,
+      "is_available": true
+    },
+    "2": {
+      "item_id": 2,
+      "category_id": 1,
+      "name": "Чизбургер",
+      "price": 279.0,
+      "cooking_minutes": 8,
+      "is_available": true
+    },
+    "3": {
+      "item_id": 3,
+      "category_id": 2,
+      "name": "Картофель фри",
+      "price": 129.0,
+      "cooking_minutes": 5,
+      "is_available": true
+    },
+    "4": {
+      "item_id": 4,
+      "category_id": 2,
+      "name": "Наггетсы (6 шт.)",
+      "price": 199.0,
+      "cooking_minutes": 6,
+      "is_available": true
+    },
+    "5": {
+      "item_id": 5,
+      "category_id": 3,
+      "name": "Кола 0,5 л",
+      "price": 99.0,
+      "cooking_minutes": 1,
+      "is_available": true
+    },
+    "6": {
+      "item_id": 6,
+      "category_id": 3,
+      "name": "Кофе",
+      "price": 149.0,
+      "cooking_minutes": 3,
+      "is_available": true
+    },
+    "7": {
+      "item_id": 7,
+      "category_id": 1,
+      "name": "Двойной бургер",
+      "price": 349.0,
+      "cooking_minutes": 10,
+      "is_available": false
+    }
+  },
+  "order_statuses": {
+    "1": {
+      "status_id": 1,
+      "code": "NEW",
+      "title": "Новый"
+    },
+    "2": {
+      "status_id": 2,
+      "code": "CONFIRMED",
+      "title": "Подтверждён"
+    },
+    "3": {
+      "status_id": 3,
+      "code": "COOKING",
+      "title": "Готовится"
+    },
+    "4": {
+      "status_id": 4,
+      "code": "ON_THE_WAY",
+      "title": "Передан курьеру"
+    },
+    "5": {
+      "status_id": 5,
+      "code": "DELIVERED",
+      "title": "Доставлен"
+    },
+    "6": {
+      "status_id": 6,
+      "code": "CANCELLED",
+      "title": "Отменён"
+    }
+  },
+  "couriers": {
+    "1": {
+      "courier_id": 1,
+      "name": "Иван Смирнов",
+      "phone": "+7 901 555-01-01",
+      "is_free": true
+    },
+    "2": {
+      "courier_id": 2,
+      "name": "Пётр Орлов",
+      "phone": "+7 901 555-02-02",
+      "is_free": true
+    },
+    "3": {
+      "courier_id": 3,
+      "name": "Алексей Громов",
+      "phone": "+7 901 555-03-03",
+      "is_free": true
+    }
+  },
+  "orders": {
+    "1": {
+      "order_id": 1,
+      "client_id": 1,
+      "status_id": 5,
+      "courier_id": 2,
+      "created_at": "2026-10-05 13:10",
+      "total_price": 348.0,
+      "estimated_minutes": 23
+    },
+    "2": {
+      "order_id": 2,
+      "client_id": 1,
+      "status_id": 5,
+      "courier_id": 1,
+      "created_at": "2026-10-09 19:40",
+      "total_price": 558.0,
+      "estimated_minutes": 23
+    },
+    "3": {
+      "order_id": 3,
+      "client_id": 1,
+      "status_id": 5,
+      "courier_id": 2,
+      "created_at": "2026-10-14 12:30",
+      "total_price": 348.0,
+      "estimated_minutes": 21
+    },
+    "4": {
+      "order_id": 4,
+      "client_id": 1,
+      "status_id": 5,
+      "courier_id": 1,
+      "created_at": "2026-10-19 20:05",
+      "total_price": 756.0,
+      "estimated_minutes": 28
+    },
+    "5": {
+      "order_id": 5,
+      "client_id": 1,
+      "status_id": 5,
+      "courier_id": 2,
+      "created_at": "2026-10-26 18:15",
+      "total_price": 507.0,
+      "estimated_minutes": 23
+    },
+    "6": {
+      "order_id": 6,
+      "client_id": 1,
+      "status_id": 3,
+      "courier_id": null,
+      "created_at": "2026-11-02 11:50",
+      "total_price": 652.65,
+      "estimated_minutes": 28
+    },
+    "7": {
+      "order_id": 7,
+      "client_id": 1,
+      "status_id": 1,
+      "courier_id": null,
+      "created_at": "2026-11-02 11:55",
+      "total_price": 519.65,
+      "estimated_minutes": 34
+    }
+  },
+  "order_lines": [
+    {
+      "order_id": 1,
+      "item_id": 1,
+      "quantity": 1,
+      "unit_price": 249.0
+    },
+    {
+      "order_id": 1,
+      "item_id": 5,
+      "quantity": 1,
+      "unit_price": 99.0
+    },
+    {
+      "order_id": 2,
+      "item_id": 2,
+      "quantity": 2,
+      "unit_price": 279.0
+    },
+    {
+      "order_id": 3,
+      "item_id": 4,
+      "quantity": 1,
+      "unit_price": 199.0
+    },
+    {
+      "order_id": 3,
+      "item_id": 6,
+      "quantity": 1,
+      "unit_price": 149.0
+    },
+    {
+      "order_id": 4,
+      "item_id": 1,
+      "quantity": 2,
+      "unit_price": 249.0
+    },
+    {
+      "order_id": 4,
+      "item_id": 3,
+      "quantity": 2,
+      "unit_price": 129.0
+    },
+    {
+      "order_id": 5,
+      "item_id": 2,
+      "quantity": 1,
+      "unit_price": 279.0
+    },
+    {
+      "order_id": 5,
+      "item_id": 3,
+      "quantity": 1,
+      "unit_price": 129.0
+    },
+    {
+      "order_id": 5,
+      "item_id": 5,
+      "quantity": 1,
+      "unit_price": 99.0
+    },
+    {
+      "order_id": 6,
+      "item_id": 2,
+      "quantity": 2,
+      "unit_price": 279.0
+    },
+    {
+      "order_id": 6,
+      "item_id": 3,
+      "quantity": 1,
+      "unit_price": 129.0
+    },
+    {
+      "order_id": 7,
+      "item_id": 4,
+      "quantity": 2,
+      "unit_price": 199.0
+    },
+    {
+      "order_id": 7,
+      "item_id": 6,
+      "quantity": 1,
+      "unit_price": 149.0
+    }
+  ]
+}
